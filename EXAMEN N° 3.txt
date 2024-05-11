@@ -1,0 +1,41 @@
+def andres(a, b):
+    a = int(input("Ingrese el primer angulo: "))
+    b = int(input("Ingrese el segundo angulo: "))
+    tercer_angulo = 180-a-b
+    print("El valor del tercer angulo es: ", tercer_angulo)
+    pass
+
+def antonio():
+    n = int(input("Ingrese un numero para convertir a negativo: "))
+    if n > 0:
+        negative = n*(-1)
+    elif n < 0:
+        negative = n
+    elif n == 0:
+        negative = 0
+    print(negative)
+
+def cristian():
+    string = input(print("Ingrese una palabra: "))
+    x=list(string)
+    x.reverse()
+    reversestring = ''.join(x)
+    print(reversestring)
+
+def rosalia():
+    nombre = input(print("Ingrese su nombre: "))
+    if nombre[0].lower()== "r":
+        print(nombre+" toca banjo")
+    else:
+        print(nombre+" no toca banjo")
+
+print("Nombre del estudiante que desea llamar su funcion: ")
+y = int (input ("1. Antonio, 2. Cristian, 3. Rosalia, 4. Andres, El numero es: "  ))
+if y == 1 :
+    antonio()
+elif y == 2 :
+    cristian()
+elif y == 3:
+    rosalia()
+elif y == 4 :
+    andres(0, 0)
